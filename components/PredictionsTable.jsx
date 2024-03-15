@@ -23,22 +23,22 @@ function PredictionsTable({ predictions }) {
                 field: "date",
                 headerName: "Date",
                 sortable: true,
-                flex: 2,
+                flex: 1,
                 renderCell: (params) => {
-                    return params.value.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+                    return params.value.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
                 }
             },
             {
                 field: "home_team",
                 headerName: "Home Team",
                 sortable: false,
-                flex: 2,
+                flex: 1,
             },
             {
                 field: "away_team",
                 headerName: "Away Team",
                 sortable: false,
-                flex: 2,
+                flex: 1,
             },
         ]),
         {
@@ -55,10 +55,10 @@ function PredictionsTable({ predictions }) {
             flex: isSmallScreen ? 3 : 1,
             renderCell: (params) => {
                 const predictionStyle = {
-                    color: params.row.is_value ? 'green' : 'orange',
+                    color: params.row.is_value ? '#0ffd93' : '#729cbd',
                 };
                 const predictionUnderStyle = {
-                    color: params.row.is_under_value ? 'green' : 'orange',
+                    color: params.row.is_under_value ? '#0ffd93' : '#729cbd',
                 };
 
                 // Fallback for falsy computed_odd or computed_under_odds values
@@ -79,6 +79,7 @@ function PredictionsTable({ predictions }) {
 
                 return (
                     <Tooltip title={tooltipTitle}>
+
                         <span>
                             <span style={predictionStyle}>{params.row.prediction.toUpperCase()}</span>
                             {' - '}
