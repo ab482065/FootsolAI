@@ -9,6 +9,7 @@ import TabPanel from '../components/TabPanel'
 import UnderOverResultsTable from '../components/UnderOverResultsTable';
 
 
+
 function Results({ results, underOverResults }) {
     const isSmallScreen = useMediaQuery('(max-width:600px)');
     const [value, setValue] = useState(0);
