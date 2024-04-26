@@ -6,7 +6,6 @@ import { Box } from '@mui/material';
 import Layout from '../components/Layout'
 import PredictionsTable from '../components/PredictionsTable';
 function Predictions({ predictions, }) {
-
     return (
         <Layout>
             <Box sx={{ width: '100%' }}>
