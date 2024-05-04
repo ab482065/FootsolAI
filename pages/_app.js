@@ -15,16 +15,16 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Set title and meta description */}
-        <title>Soccer Predictions - Footixify</title>
+        <title>Soccer Predictions - FootsolAI</title>
         <meta name="description" content="Get accurate soccer predictions and betting tips for upcoming matches. Stay updated with the latest soccer predictions and analysis." />
 
         {/* Set canonical URL */}
-        <link rel="canonical" href="https://mg30.github.io/footixify/" />
+        <link rel="canonical" href="https://github.com/ab482065" />
 
         {/* Add meta tags for social sharing */}
         <meta property="og:title" content="Soccer Predictions - Footixify" />
         <meta property="og:description" content="Get accurate soccer predictions and betting tips for upcoming matches. Stay updated with the latest soccer predictions and analysis." />
-        <meta property="og:url" content="https://mg30.github.io/footixify/" />
+        <meta property="og:url" content="https://github.com/ab482065" />
         <meta property="og:type" content="website" />
 
         {/* Add Twitter card */}
